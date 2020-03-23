@@ -1,3 +1,37 @@
-<hello name="{{ name }}"></hello>
-<a class="headerbg">
-<img src="https://github.com/dkarodkar7/angular-1/blob/master/src/assets/headerbg.png"/></a>
+<!--hello name="{{ name }}"></hello-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid px-0">
+    <div class="row w-100">
+      <div class="col-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" (click)="isShown = !isShown" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="col-10">
+        <div class="collapse justify-content-end navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" (click)="isShown = false" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" >Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" > Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="isShown = false" >Volunteer work</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="headerbg">
+<img src="https://raw.githubusercontent.com/dkarodkar7/angular-1/master/src/app/assets/headerbg.png"/></div>
+<div>
+  <ul><li>Resume</li>
+  <li>Linkedin
+    </li></ul>
+</div>

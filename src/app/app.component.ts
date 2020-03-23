@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import sdk from '@stackblitz/sdk';
+
 
 @Component({
   selector: 'my-app',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  isShown:boolean=false;
+
 }
